@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Shopping Cart | ShopEase</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="shopping-cart-page">
+
+    <!-- NAVBAR -->
+    <header class="cart-navbar">
+
+        <a href="dashboard.html" class="cart-logo">
+            <span class="cart-logo-icon">S</span>
+            ShopEase
+        </a>
+
+        <nav class="cart-nav">
+            <a href="dashboard.html">Continue Shopping</a>
+            <a href="myorders.html">My Orders</a>
+            <button onclick="logout()" class="cart-logout">Logout</button>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="cart-hero">
+
+        <div>
+            <span class="cart-tag">YOUR SHOPPING BAG</span>
+
+            <h1>My Shopping Cart</h1>
+
+            <p>
+                Review your selected products before placing your order.
+            </p>
+        </div>
+
+        <div class="cart-hero-icon">🛒</div>
+
+    </section>
+
+
+    <!-- CART MAIN -->
+    <main class="cart-main">
+
+        <div class="cart-heading">
+            <div>
+                <span class="cart-section-tag">SHOPPING DETAILS</span>
+                <h2>Your Selected Products</h2>
+                <p>Check your items and update quantities.</p>
+            </div>
+        </div>
+
+
+        <div class="cart-layout">
+
+            <!-- CART ITEMS -->
+            <section class="cart-items-section">
+
+                <div id="cartItems" class="cart-items">
+                    Loading cart...
+                </div>
+
+            </section>
+
+
+            <!-- ORDER SUMMARY -->
+            <aside class="cart-summary">
+
+                <div class="summary-icon">🛍️</div>
+
+                <h2>Order Summary</h2>
+
+                <p class="summary-description">
+                    Your shopping total
+                </p>
+
+                <div class="summary-divider"></div>
+
+                <h3 id="cartTotal">Total: ₹0</h3>
+
+                <button
+                    type="button"
+                    class="checkout-btn"
+                    onclick="goToCheckout()"
+                >
+                    Proceed to Checkout
+                    <span>→</span>
+                </button>
+
+                <a href="dashboard.html" class="continue-shopping">
+                    ← Continue Shopping
+                </a>
+
+                <div class="secure-shopping">
+                    🔒 Secure Shopping Experience
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="cart-footer">
+
+        <h3>ShopEase</h3>
+
+        <p>Your happiness, our priority.</p>
+
+        <span>© 2026 ShopEase. All Rights Reserved.</span>
+
+    </footer>
+
+
+    <script src="js/cart.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

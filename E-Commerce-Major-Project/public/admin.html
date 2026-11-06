@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="admin-page">
+
+    <!-- NAVBAR -->
+    <header class="admin-navbar">
+
+        <a href="admin.html" class="admin-logo">
+            <span class="admin-logo-icon">S</span>
+            ShopEase <span class="admin-label">ADMIN</span>
+        </a>
+
+        <nav class="admin-nav">
+            <a href="admin.html" class="active">Dashboard</a>
+            <a href="admin-products.html">Products</a>
+            <a href="customers.html">Customers</a>
+            <a href="orders.html">Orders</a>
+
+            <button class="admin-logout-btn" onclick="logout()">
+                Logout
+            </button>
+        </nav>
+
+    </header>
+
+    <!-- WELCOME SECTION -->
+    <section class="admin-hero">
+
+        <div>
+            <span class="admin-tag">ADMIN CONTROL CENTER</span>
+
+            <h1>Welcome, Admin!</h1>
+
+            <p>
+                Manage your store, products, customers and orders
+                from one simple dashboard.
+            </p>
+        </div>
+
+        <div class="admin-hero-icon">🛍️</div>
+
+    </section>
+
+    <!-- DASHBOARD CONTENT -->
+    <main class="admin-main">
+
+        <div class="admin-heading">
+            <div>
+                <span class="section-tag">OVERVIEW</span>
+                <h2>Dashboard Overview</h2>
+                <p>Here is what's happening in your store.</p>
+            </div>
+        </div>
+
+        <!-- STATISTICS -->
+        <section class="admin-stats">
+
+            <div class="admin-stat-card">
+                <div class="stat-icon customer-icon">👥</div>
+                <div>
+                    <p>Total Customers</p>
+                    <h2 id="totalUsers">5</h2>
+                </div>
+            </div>
+
+            <div class="admin-stat-card">
+                <div class="stat-icon product-icon">📦</div>
+                <div>
+                    <p>Total Products</p>
+                    <h2 id="totalProducts">4</h2>
+                </div>
+            </div>
+
+            <div class="admin-stat-card">
+                <div class="stat-icon order-icon">🛒</div>
+                <div>
+                    <p>Total Orders</p>
+                    <h2 id="totalOrders">6</h2>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- QUICK ACTIONS -->
+        <section class="admin-actions-section">
+
+            <div class="admin-heading">
+                <div>
+                    <span class="section-tag">STORE MANAGEMENT</span>
+                    <h2>Quick Actions</h2>
+                    <p>Choose what you want to manage.</p>
+                </div>
+            </div>
+
+            <div class="admin-actions">
+
+                <a href="addproduct.html" class="admin-action-card">
+                    <div class="action-icon">➕</div>
+                    <h3>Add Products</h3>
+                    <p>Add new products to your online store.</p>
+                    <span>Get Started →</span>
+                </a>
+
+                <a href="admin-products.html" class="admin-action-card">
+                    <div class="action-icon">📦</div>
+                    <h3>Manage Products</h3>
+                    <p>View, edit and delete store products.</p>
+                    <span>Manage Now →</span>
+                </a>
+
+                <a href="customers.html" class="admin-action-card">
+                    <div class="action-icon">👥</div>
+                    <h3>View Customers</h3>
+                    <p>Check registered customer details.</p>
+                    <span>View Details →</span>
+                </a>
+
+                <a href="orders.html" class="admin-action-card">
+                    <div class="action-icon">🛍️</div>
+                    <h3>View Orders</h3>
+                    <p>Track and update customer orders.</p>
+                    <span>View Orders →</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="admin-footer">
+        <p>© 2026 ShopEase. All rights reserved.</p>
+        <p>Admin Management Panel</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

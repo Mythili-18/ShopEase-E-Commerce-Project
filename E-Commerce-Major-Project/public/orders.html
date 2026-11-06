@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Orders | ShopEase Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="manage-orders-page">
+
+    <!-- NAVBAR -->
+    <header class="orders-navbar">
+        <a href="admin.html" class="orders-logo">
+            <span class="orders-logo-icon">S</span>
+            ShopEase
+            <span class="orders-admin-label">ADMIN</span>
+        </a>
+
+        <nav class="orders-nav">
+            <a href="admin.html">Dashboard</a>
+            <a href="admin-products.html">Products</a>
+            <a href="customers.html">Customers</a>
+            <a href="orders.html" class="active">Orders</a>
+            <button onclick="logout()" class="orders-logout">Logout</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="orders-hero">
+        <div>
+            <span class="orders-tag">ORDER MANAGEMENT</span>
+            <h1>All Customer Orders</h1>
+            <p>Track customer purchases and manage order and payment status.</p>
+        </div>
+
+        <div class="orders-hero-icon">📦</div>
+    </section>
+
+    <!-- MAIN -->
+    <main class="orders-main">
+
+        <div class="orders-heading">
+            <span class="orders-section-tag">YOUR STORE ACTIVITY</span>
+            <h2>Order Details</h2>
+            <p>View and update all customer orders in one place.</p>
+        </div>
+
+        <div id="ordersList" class="orders-list">
+            Loading orders...
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="orders-footer">
+        <h3>ShopEase</h3>
+        <p>Admin Order Management</p>
+        <span>© 2026 ShopEase. All Rights Reserved.</span>
+    </footer>
+
+    <script src="js/orders.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

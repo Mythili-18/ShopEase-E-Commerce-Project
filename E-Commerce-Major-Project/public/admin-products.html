@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Products | ShopEase Admin</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="manage-products-page">
+
+    <!-- NAVBAR -->
+
+    <header class="manage-navbar">
+
+        <a href="admin.html" class="manage-logo">
+            <span class="manage-logo-icon">S</span>
+            ShopEase
+            <span class="manage-admin-label">ADMIN</span>
+        </a>
+
+        <nav class="manage-nav">
+
+            <a href="admin.html">Dashboard</a>
+
+            <a href="admin-products.html" class="active">
+                Manage Products
+            </a>
+
+            <button onclick="logout()" class="manage-logout">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="manage-hero">
+
+        <div class="manage-hero-content">
+
+            <span class="manage-tag">PRODUCT MANAGEMENT</span>
+
+            <h1>Manage Your Products</h1>
+
+            <p>
+                View and manage all products available in your ShopEase store.
+                Keep your product collection updated.
+            </p>
+
+            <a href="addproduct.html" class="manage-add-btn">
+                + Add New Product
+            </a>
+
+        </div>
+
+        <div class="manage-hero-icon">
+            <span>📦</span>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS SECTION -->
+
+    <main class="manage-main">
+
+        <div class="manage-heading">
+
+            <div>
+                <span class="manage-section-tag">YOUR INVENTORY</span>
+
+                <h2>All Products</h2>
+
+                <p>Manage your store's product collection.</p>
+            </div>
+
+            <a href="addproduct.html" class="manage-add-secondary">
+                + Add Product
+            </a>
+
+        </div>
+
+        <div id="adminProductList">
+            Loading products...
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="manage-footer">
+
+        <h3>ShopEase</h3>
+
+        <p>Admin Product Management</p>
+
+        <span>© 2026 ShopEase. All Rights Reserved.</span>
+
+    </footer>
+
+
+    <script src="js/admin-products.js"></script>
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

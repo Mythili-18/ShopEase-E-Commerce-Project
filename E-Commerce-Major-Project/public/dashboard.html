@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Products</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- NAVBAR -->
+    <header class="dashboard-navbar">
+
+        <a href="/" class="dashboard-logo">
+            <span class="logo-icon">S</span>
+            ShopEase
+        </a>
+
+        <nav class="dashboard-nav">
+            <a href="dashboard.html" class="active">Home</a>
+            <a href="cart.html">My Cart</a>
+            <a href="myorders.html">My Orders</a>
+            <button type="button" onclick="logout()" class="logout-btn">
+                Logout
+            </button>
+        </nav>
+
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="dashboard-hero">
+
+        <div>
+            <span class="dashboard-tag">WELCOME TO SHOPEASE</span>
+
+            <h1>Find Your Perfect Style</h1>
+
+            <p>
+                Discover amazing products at great prices.
+                Shop your favourites with just a few clicks.
+            </p>
+
+            <a href="#products-section" class="dashboard-shop-btn">
+                Explore Products →
+            </a>
+        </div>
+
+        <div class="dashboard-hero-icon">
+            🛍️
+        </div>
+
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <main class="dashboard-main" id="products-section">
+
+        <div class="products-heading">
+            <div>
+                <span class="section-tag">OUR COLLECTION</span>
+                <h2>Available Products</h2>
+                <p>Explore our latest collection.</p>
+            </div>
+        </div>
+
+        <!-- Products loaded dynamically using JavaScript -->
+        <div id="productList">
+            Loading products...
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="dashboard-footer">
+        <p>© 2026 ShopEase. All rights reserved.</p>
+        <p>Happy Shopping!</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/products.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

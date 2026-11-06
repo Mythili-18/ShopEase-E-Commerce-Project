@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customers | ShopEase Admin</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="customers-page">
+
+    <!-- NAVBAR -->
+
+    <header class="customers-navbar">
+
+        <a href="admin.html" class="customers-logo">
+            <span class="customers-logo-icon">S</span>
+            ShopEase
+            <span class="customers-admin-label">ADMIN</span>
+        </a>
+
+        <nav class="customers-nav">
+
+            <a href="admin.html">Dashboard</a>
+
+            <a href="admin-products.html">Manage Products</a>
+
+            <a href="customers.html" class="active">Customers</a>
+
+            <button onclick="logout()" class="customers-logout">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="customers-hero">
+
+        <div class="customers-hero-content">
+
+            <span class="customers-tag">CUSTOMER MANAGEMENT</span>
+
+            <h1>Customer Details</h1>
+
+            <p>
+                View your registered customers and their contact information
+                in one place.
+            </p>
+
+        </div>
+
+        <div class="customers-hero-icon">
+            <span>👥</span>
+        </div>
+
+    </section>
+
+
+    <!-- CUSTOMER SECTION -->
+
+    <main class="customers-main">
+
+        <div class="customers-heading">
+
+            <div>
+                <span class="customers-section-tag">YOUR COMMUNITY</span>
+
+                <h2>All Customers</h2>
+
+                <p>Registered customer information.</p>
+            </div>
+
+        </div>
+
+        <div id="customerList">
+            Loading customers...
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="customers-footer">
+
+        <h3>ShopEase</h3>
+
+        <p>Admin Customer Management</p>
+
+        <span>© 2026 ShopEase. All Rights Reserved.</span>
+
+    </footer>
+
+
+    <script src="js/customers.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

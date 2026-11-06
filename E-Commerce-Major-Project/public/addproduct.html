@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Product | ShopEase Admin</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="add-product-page">
+
+    <!-- NAVBAR -->
+    <header class="add-product-navbar">
+
+        <a href="admin.html" class="add-product-logo">
+            <span class="add-product-logo-icon">S</span>
+            ShopEase
+            <span class="add-product-admin-label">ADMIN</span>
+        </a>
+
+        <nav class="add-product-nav">
+            <a href="admin.html">Dashboard</a>
+            <a href="admin-products.html">Manage Products</a>
+            <a href="customers.html">Customers</a>
+            <a href="orders.html">Orders</a>
+
+            <button onclick="logout()" class="add-product-logout">
+                Logout
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="add-product-hero">
+
+        <div class="add-product-hero-content">
+
+            <span class="add-product-tag">
+                PRODUCT MANAGEMENT
+            </span>
+
+            <h1>Add New Product</h1>
+
+            <p>
+                Add new products to your ShopEase store
+                and make them available to customers.
+            </p>
+
+        </div>
+
+        <div class="add-product-hero-icon">
+            <span>📦</span>
+        </div>
+
+    </section>
+
+
+    <!-- MAIN SECTION -->
+    <main class="add-product-main">
+
+        <div class="add-product-heading">
+
+            <span class="add-product-section-tag">
+                PRODUCT INFORMATION
+            </span>
+
+            <h2>Product Details</h2>
+
+            <p>
+                Enter the product information below.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT FORM -->
+        <div class="add-product-card">
+
+            <div class="add-product-card-heading">
+
+                <div class="add-product-card-icon">
+                    🛍️
+                </div>
+
+                <div>
+                    <h3>New Product</h3>
+                    <p>Fill in the details to add a product.</p>
+                </div>
+
+            </div>
+
+
+            <form id="productForm" class="add-product-form">
+
+                <div class="add-product-field">
+
+                    <label for="name">Product Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter product name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="add-product-field">
+
+                    <label for="description">Product Description</label>
+
+                    <textarea
+                        id="description"
+                        placeholder="Enter product description"
+                        rows="4"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="add-product-row">
+
+                    <div class="add-product-field">
+
+                        <label for="price">Price (₹)</label>
+
+                        <input
+                            type="number"
+                            id="price"
+                            placeholder="Enter price"
+                            min="0.01"
+                            step="0.01"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="add-product-field">
+
+                        <label for="stock">Stock Quantity</label>
+
+                        <input
+                            type="number"
+                            id="stock"
+                            placeholder="Enter quantity"
+                            min="0"
+                            step="1"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="add-product-field">
+
+                    <label for="category">Product Category</label>
+
+                    <input
+                        type="text"
+                        id="category"
+                        placeholder="Example: Electronics, Fashion"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="add-product-field">
+
+                    <label for="image">Product Image URL</label>
+
+                    <input
+                        type="text"
+                        id="image"
+                        placeholder="Paste image URL (optional)"
+                    >
+
+                    <small>
+                        You can leave this field empty if no image is available.
+                    </small>
+
+                </div>
+
+
+                <p id="message" class="add-product-message"></p>
+
+
+                <button type="submit" class="add-product-submit">
+                    <span>＋</span> Add Product
+                </button>
+
+                <a href="admin-products.html" class="add-product-back">
+                    Back to Manage Products
+                </a>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="add-product-footer">
+
+        <h3>ShopEase</h3>
+
+        <p>Admin Product Management</p>
+
+        <span>© 2026 ShopEase. All Rights Reserved.</span>
+
+    </footer>
+
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>
