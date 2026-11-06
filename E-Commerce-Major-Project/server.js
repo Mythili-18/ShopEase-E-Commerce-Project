@@ -15,29 +15,26 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-// SERVE HTML, CSS AND JAVASCRIPT FILES
 app.use(express.static(path.join(__dirname, "public")));
 
-// API ROUTES
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/admin", adminRoutes);
 
-// HOME PAGE
 app.get("/", (req, res) => {
-    res.send("<h1>E-Commerce Website Server Running Successfully!</h1>");
+    res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// DATABASE CONNECTION
+const PORT = process.env.PORT || 3000;
+
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log("MongoDB Connected Successfully!");
 
-        app.listen(3000, () => {
-            console.log("Server running at http://localhost:3000");
+        app.listen(PORT, "0.0.0.0", () => {
+            console.log(`Server running on port ${PORT}`);
         });
     })
     .catch((error) => {
